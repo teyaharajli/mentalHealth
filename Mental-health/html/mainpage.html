@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="C:\Users\lenovo legion\website\Mental-health\css\style.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BetterTogether.com</title>
+    <script
+    src="https://kit.fontawesome.com/a59b9b09ab.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+<body>
+
+<div class="outter">
+  <nav class="navbar">
+    <ul class="menuItems">
+      <li><a href='#aboutus' data-item='About'>About</a></li>
+      <li><a href='#facts' data-item='Facts'>Facts</a></li>
+      <li><a href='#chat' data-item='communicate'>communicate</a></li>
+      <li><a href='mailto:teyaharajly@gmail.com' data-item='Contact'>Contact</a></li>
+      <li><a href='Main.html' data-item='logout'>logout</a></li>
+    </ul>
+  </nav>
+
+  <div class="about"> 
+  <h2 id="aboutus"> ——— &nbsp; W H O  &nbsp;  A R E   &nbsp; W E &nbsp; ———    </h2>
+    <h4>   T H E  &nbsp;  N E W   &nbsp; L I F E  &nbsp;-  &nbsp;S A V I N G  <br> &nbsp; P R O G R A M    </H2>
+  <p>We are a non-profit organisation aiming for a better country, and a better world.
+    That's why we operate several programs and services like the 24/7 online chat, and 
+    many other programs.On average, every two days in lebanon someone loses his life Due
+    to suicide and life stress; and an average of 6 people every 6 hours ending their lives.
+    Because most people find it hard, or mostly impossible to tak about their weakness, taboos,
+    and their thoughts, this program helps them to reach support anonymously.
+    And because "Talking lengthens life-time" our volunteers are available 24/7 for 
+    immediate emotional support, embracing and organising thoughts.
+  </p>
+  </div>
+
+  <div class="facts">
+ <H2 id="facts"> ——— &nbsp; F A C T S  &nbsp; A N D &nbsp; S T A T S &nbsp;  ———    </H2>
+
+ <div class="cover">
+  <button class="left" onclick="leftScroll()">
+    <i class="fas fa-angle-double-left"></i>
+  </button>
+  <div class="scroll-images">
+    <div class="child">
+      <h3> MHD <BR> &nbsp; STATISTICS <br>  ———— </h3>
+      <P>Almost 11% of the global population, about 792 million people, live with
+        some form of mental health disorder.
+      </P>
+    </div>
+    <div class="child">
+      <h3> ARAB  &nbsp;  <br> ———— </h3>
+        <P>In the Arab region, nearly 3 in 10 people report suffering from 
+          depression.
+        </P>
+    </div>
+    <div class="child">
+      <h3> LEBANON  &nbsp;  <br>  ———— </h3>
+      <P>In LEBANON, there are fewer than <span><br><b>100</b><br></span>
+        registered psychiatrists left in 2021.
+      </P>
+    </div>
+    <div class="child">
+      <h3> 1546  &nbsp;  <br>  ———— </h3>
+      <P><span><br><b>36,061</b><br></span>
+        Calls from the lifeline since 2017,<br>
+        
+      </P>
+    </div>
+    <div class="child">
+      <h3> THERAPY  &nbsp;  <br>  ———— </h3>
+      <P>
+        <span><br><b>22,219</b><br></span>
+        people reached through awareness and outreach sessions since
+        2014.
+      </P>
+    </div>
+    <div class="child">
+      <h3> YOUTH  &nbsp;  <br>  ———— </h3>
+      <P>54% of youth in the Arab world say quality mental health care is <br><span><b>difficult</b></span><br>
+        to access.
+      </P>
+    </div>
+  </div>
+  <button class="right" onclick="rightScroll()">
+    <i class="fas fa-angle-double-right"></i>
+  </button>
+ </div>
+ </div>
+
+ <div class="chatdiv">
+  <H2 id="chat"> ——— &nbsp; W E &nbsp; A R E &nbsp; H E R E &nbsp; F O R &nbsp; Y O U &nbsp; ——— </H2>
+  <p>Feeling lost, stressed, anxious, or you have a panic attack, and you don't have no one to chat about it? 
+    Why not trying to text one of our volunteers <b>ANONYMOUSLY</b> ?
+  <h1 style="text-align: center;">الحكي بيطوّل العمر</h1>
+  <button onclick="openChat()" class="chatbutton">Chat with a Volunteer</button>
+  <p style="font-size: 20px;">You can also call our hotline number. It's <b>FREE</b> of charge.</p>
+  <a href="#" class="phone-link">Call Now</a>
+ </div>
+
+ <div id="chatPopup" class="chat-popup">
+  <div class="chat-container">
+      <h3 style="color: white;">Chat with a Volunteer</h3>
+      <div class="chatbox">
+        <div id="chatMessages"></div>
+      </div>
+      <input type="text" id="chatInput" placeholder="Type your message...">
+      <button id="sendButton">Send</button>
+      <button id="closeButton" onclick="closeChat()">Close</button>
+      <div class="clr"></div>
+  </div>
+</div>
+  
+  
+
+  <div class="paid-program">
+    <h2 id="paid"> ——— &nbsp; T H E R A P Y &nbsp; P R O G R A M &nbsp; ——— </h3>
+    <p>We are currently working on a paid therapy program which involves online , or on site therapy sessions.
+      Our psychiatrists and psychologists are well ready to start this program as soon as possible.
+    </p>
+    <h3>——— &nbsp; S T A Y &nbsp; T U N E D &nbsp; ——— </h3>
+  </div>
+
+
+
+
+  <h2 id="paid" style="text-align: center;"> ——— &nbsp; T H I N G S  &nbsp; Y O U &nbsp; N E E D &nbsp; T O &nbsp; K N O W &nbsp; ——— </h3>
+  <div class="extras">
+    <div class="card">
+      <div class="image1"></div>
+       <div class="content">
+        <p style="font-size: 20px;"><b><u>FREE-THERAPY PROGRAMS</u></b></p>
+     
+         <p class="desc">
+          Due to the massive ammount of people seeking help but not able to get it, some lebanese people...     
+         <a href="https://www.beirut.com/en/59288/10-ngos-offering-free-or-affordable-mental-health-support-in-lebanon" class="action">
+           Find out more
+           <span aria-hidden="true">
+             →
+           </span>
+         </a>
+       </div>
+     </div>
+
+
+     <div class="card" id="cards">
+      <div class="image2"></div>
+       <div class="content">
+        <p style="font-size: 20px;"><b><u>DONATIONS</u></b></p>
+     
+         <p class="desc">
+         As a half-free therapy-program, we would love to accept donations from generous people 
+         to outgrow our services more and more.
+         </p>
+     
+         <a href="https://embracelebanon.org/Donate" class="action">
+           Find out more
+           <span aria-hidden="true">
+             →
+           </span>
+         </a>
+       </div>
+     </div>
+
+
+     <div class="card">
+      <div class="image3"></div>
+       <div class="content">
+         <p style="font-size: 20px;"><b><u>CRISIS-ALERTS</u></b></p>
+    
+         <p class="desc">
+         Please note that we are not a crisis website, if you have an urgent crisis, call 112 or some numbers mention down...
+         </p>
+     
+         <a href="../html/crisis.html" class="action">
+           Find out more
+           <span aria-hidden="true">
+             →
+           </span>
+         </a>
+       </div>
+     </div>
+  </div>
+</div>
+
+
+
+
+<footer class="footer_area section_padding_130_0">
+  <div class="containerss">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="single-footer-widget section_padding_0_130">
+          <div class="footer-logo mb-3"></div>
+          <p>Remember that you are what you think about. Take it easy on yourself.</p>
+          <div class="copywrite-text mb-5">
+            <p class="mb-0">&copy; Made <i class="lni-heart mr-1"></i>by ——— &nbsp; TEYA HARAJLI &nbsp; ———</p>
+          </div>
+          <div class="footer_social_area"><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pinterest"><i class="fa fa-pinterest"></i></a><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Skype"><i class="fa fa-skype"></i></a><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg">
+        <div class="single-footer-widget section_padding_0_130">
+          <h5 class="widget-title">About</h5>
+          <div class="footer_menu">
+            <ul>
+              <li><a href="#aboutus">About Us</a></li>
+              <li><a href="#cards">Donate</a></li>
+              <li><a href="#">Community</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg">
+        <div class="single-footer-widget section_padding_0_130">
+          <h5 class="widget-title">Support</h5>
+          <div class="footer_menu">
+            <ul>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Term &amp; Conditions</a></li>
+              <li><a href="#">Help &amp; Support</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg">
+        <div class="single-footer-widget section_padding_0_130">
+          <h5 class="widget-title">Contact</h5>
+          <div class="footer_menu">
+            <ul>
+              <li><a href="#">Call Centre</a></li>
+              <li><a href="#">Email Us</a></li>
+              <li><a href="#">Term &amp; Conditions</a></li>
+              <li><a href="#">Help Center</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="C:\Users\lenovo legion\website\Mental-health\Jscript\script.js"></script>
+
+</body>
+</html>
